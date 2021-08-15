@@ -1,5 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonCol, IonContent, IonGrid, IonHeader, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+import Keyboard from '../components/Synthesizer';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -7,16 +7,22 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Ionic - React : Synth</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle size="large">Ionic - React : Synth</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+        <IonGrid>
+          <IonRow class="ion-justify-content-center">
+            <IonCol size="auto">
+              <Keyboard />
+            </IonCol>
+          </IonRow>
+        </IonGrid>
       </IonContent>
     </IonPage>
   );
