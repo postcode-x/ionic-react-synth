@@ -1,0 +1,7 @@
+{
+  "name": "ionic-react-synth",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

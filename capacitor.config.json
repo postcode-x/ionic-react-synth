@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ionic-react-synth",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
